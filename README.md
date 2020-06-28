@@ -18,6 +18,8 @@ Contains the 62 counties of New York State and their spatial extents
 
 https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/new-york-counties.geojson
 
+![image](https://github.com/howbigdata/Coursera_Capstone/raw/master/geojson.png)
+
 ### A list of all bank owned or in-bank ATMs located in New York State.
 
 This dataset is provide by Department of Financial Services and publicly available on
@@ -83,10 +85,17 @@ We will use foursquare API to gather data about suroundings, then apply clusteri
 We've combined ATM data with geodata to visualize the repartition of ATM.
 This allowed us to identify that ATM are not distributed uniformely inside the state of New York.
 Nassau County and New York County have large number of ATM and small surface area.
+![image](https://github.com/howbigdata/Coursera_Capstone/raw/master/join_atm_map.png)
+
 By introducing another dataset and population information per county we identify a mostly linear relation between the population and number of ATM per county. 
 We introduce one more dataset to investigate the relation between wealth and ATM density but that was a rather unsuccesful exploration.
+![image](https://github.com/howbigdata/Coursera_Capstone/raw/master/lin_reg_population.png)
+
 During the second step of this analysis (per institution), we've gathered surrounding information for a sample of our ATM dataset. We apply dimensionnality reduction by recategorizing venues using parent category.
 We've found that most ATMs are surrounded mainly by Food and Shopping store, but could find any pattern that would be specific to one institution.
+
+![image](https://github.com/howbigdata/Coursera_Capstone/raw/master/treemap_categories.png)
+
 ## Discussion
 
 One big limitation comes from the ATM dataset itself:  ATM locations listed refer to bank owned ATM. Non-bank ATMs are not included. 
